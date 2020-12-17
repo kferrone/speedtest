@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: speedtest
+spec:
+  template:
+    spec:
+      containers:
+      - name: speedtest
+        image: docker.io/kferrone/speedtest:latest
+        env:
+        - name: ACCEPT_LICENSE
+          value: 'true'
+        args:
+          - -h
+      restartPolicy: Never
+  backoffLimit: 4

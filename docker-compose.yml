@@ -1,0 +1,5 @@
+version: "3.7"
+services:
+  speedtest:
+    build: .
+    platform: linux/arm64,linux/amd64
