@@ -1,5 +1,5 @@
 # Speedtest
-A docker image and k8s job for speedtest.net to test your speeds in the cloud. 
+A docker image and k8s job for [speedtest.net cli provided by Ookla&#xae;](https://www.speedtest.net/apps/cli) to test your speeds in your cloud. 
 
 The image is a multi arch image for amd/64 and arm/64.
 
